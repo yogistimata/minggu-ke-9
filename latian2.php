@@ -19,14 +19,15 @@ $mahasiswa= [
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>latian get</title>
+    <title>latian Get</title>
 </head>
 <body>
  <h1>Data mahasiswa</h1>
 <ul>
  <?php foreach ($mahasiswa as $mhs):?>
     <li>
-        <a href= "latian3.php"><?= $mhs ["Nama"]; ?></a>
+        <a
+         href= "latian3.php?Nama=<?= $mhs["Nama"] ; ?>&NIM= <?= $mhs["NIM"] ;?>&Jurusan= <?= $mhs["Jurusan"] ;?>&Gambar= <?= $mhs["Gambar"];?>"><?= $mhs ["Nama"]; ?></a>
     </li>
 <?php endforeach; ?>
  </ul> 
