@@ -1,3 +1,10 @@
+<?php
+if(!isset($_GET["Nama"])){
+    header("location: latian2.php");
+    exit;
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
